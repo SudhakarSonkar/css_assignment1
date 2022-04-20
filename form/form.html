@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>Student Registration Form</header>
+
+    <table class="center">
+        <form>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" placeholder="Enter full name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="fathername">Father's Name:</label></td>
+                <td><input type="text" id="fathername" placeholder="Enter Father's Name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="mothername">Mother's Name:</label></td>
+                <td><input type="text" id="mothername" placeholder="Enter Mother's Name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" placeholder="017xxxxxxxx"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" placeholder="sample@example.com"></td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td><input type="radio" id="male" value="male" name="gender">
+                    <label for="html">Male</label>
+                    <input type="radio" id="female" value="female" name="gender">
+                    <label for="html">Female</label>
+                    <input type="radio" id="other" value="other" name="gender">
+                    <label for="html">Other</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="number" id="day" name="dob" min="1" max="31" placeholder="day"> -
+                    <input type="number" id="month" name="dob" min="1" max="12" placeholder="month"> -
+                    <input type="number" id="year" name="dob" min="1900" max="2100" placeholder="year"><i> (dd-mm-yyyy)</i></td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text" id="address" name="address" placeholder="Street:-    House:-    Road:-"></td>
+            </tr>
+
+            <tr>
+                <td><label for="blood">Blood Group:</label></td>
+                <td><select id="bloods" name="blood" aria-placeholder="select">
+                    <option value="none" selected disabled hidden>Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                  </select></td>
+            </tr>
+
+            <tr>
+                <td><label for="department">Department:</label></td>
+                <td><input type="radio" id="cse" value="cse" name="department">
+                    <label for="cse">CSE</label>
+                    <input type="radio" id="eee" value="eee" name="department">
+                    <label for="eee">EEE</label>
+                    <input type="radio" id="bba" value="bba" name="department">
+                    <label for="html">BBA</label></td>
+            </tr>
+
+            <tr>
+                <td><label for="course">Course:</label></td>
+                <td><input type="checkbox" id="c" name="c">
+                    <label for="c">C</label>
+                    <input type="checkbox" id="cpp" name="cpp">
+                    <label for="cpp">C++</label>
+                    <input type="checkbox" id="java" name="java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="ai" name="ai">
+                    <label for="ai">AI</label>
+                    <input type="checkbox" id="ml" name="ml">
+                    <label for="ml">Machine Learning</label>
+                    <input type="checkbox" id="robotics" name="robotics">
+                    <label for="robotics">Robotics</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="photo">Photo:</label></td>
+                <td><input type="file" id="photo" name="filename"></td>
+            </tr>
+
+            <tr class="footer">
+                <td>
+                    <a href="">Submit</a>
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </form>
+    </table>
+    
+</body>
+</html>
